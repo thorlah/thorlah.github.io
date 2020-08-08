@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Zooming images</title>
+</head>
+    
+<body>
+    <div>
+        <img id="myimage" src="image/cake.jpg" style="height: 200px; width:200px" />
+    </div>
+    <button id="zoominbutton">+</button>
+    <button id="zoomoutbutton">-</button>
+    
+    <script>
+       
+        var height = document.getElementById("myimage").height;
+        var width = document.getElementById("myimage").width;
+        
+        document.getElementById("zoominbutton").onclick = function(){
+            //increase the height
+            document.getElementById("myimage").style.height = height * 1.5;
+            //increase the width
+            document.getElementById("myimage").style.width = width * 1.5;
+        }
+        
+        document.getElementById("zoomoutbutton").onclick = function(){
+            //reduce the height
+            document.getElementById("myimage").style.height = height / 1.5;
+            //reduce the width
+            document.getElementById("myimage").style.width = width / 1.5;
+        }
+        
+    </script>
+</body>    
+
+
+</html>
+

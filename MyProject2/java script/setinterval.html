@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Using array</title>
+</head>
+    
+    <body>
+        <div id="screen" style="height: 300px; width: 300px; background-color: red; color: white">
+        
+        </div>
+      
+        <script>
+         var hour = 00;
+         var min = 00;
+         var sec =00;
+         var timer =setInterval(function(){
+             document.getElementById("screen").innerText= hour +":"+ min +": "+ sec++ ;
+         }, 1000 );
+
+       </script>
+    
+   
+  </body>
+
+    
+    
+</html>
+
+

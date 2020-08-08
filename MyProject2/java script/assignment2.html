@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Data Type and Variable</title>
+</head>
+    
+<body>
+    <div> 
+        <div id='screen' style="background-color: red;color:white; width:160px;height:100px;line-height:100px;text-align:center"> </div> 
+        <input type="number" id = "num1"/><br>
+        <input type="number" id = "num2"/><br>
+        <button id="multiplybutton" type="button">Multiplication</button>
+    </div>
+
+
+            <script>
+                document.getElementById("multiplybutton").onclick = function(){
+                    //get the first number
+                    var a =parseInt(document.getElementById("num1").value);
+
+                    //get the second number
+                    var b =parseInt(document.getElementById("num2").value);
+                    //add the two number
+                    var c = a * b
+                    //display result on the screen
+                    document.getElementById("screen").innerText =c;
+                }
+                /*
+            var a = 12;
+            var b= 15;
+            var c= "Tolani";
+            var d ="Adetula";
+            document.write(a); 
+            document.write('<br>');
+            document.write(b);
+            document.write('<br>');
+            document.write(a+b +"<br>");
+            document.write(a*b +"<br>");
+            document.write(c+d);
+            */
+            </script>   
+</body>    
+
+
+</html>
+

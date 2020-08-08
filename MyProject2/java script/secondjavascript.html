@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Second Javascript</title>
+		
+	</head>
+	<body>
+		<p>I am still learning javascript</p>
+		<input type="text" id="myinput"/>
+		<button id="movebutton">move</button>
+		<div id="screen" style="height:300px; width:300px; background-color:aqua">
+		
+		.</div>
+		
+		
+		<script>
+		document.getElementById("movebutton").onclick=function(){
+			//get the text
+		var b= document.getElementById("myinput").value;
+		
+		//alert(b)
+		//move the text
+		document.getElementById("screen").innerText=b;
+		
+		//clear the text in the input
+		document.getElementById("myinput").value="";
+		}
+		
+		</script>
+		
+	</body>
+</html>

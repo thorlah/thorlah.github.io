@@ -1,0 +1,33 @@
+#parent{
+	background-color:white;
+	min-height:500px;
+	width:100%;
+	border:1px solid black;
+}
+
+#child1{
+		border-bottom:1px solid black;
+		min-height:100px;
+		min-width:100%
+		
+}
+
+		
+#child2{
+		background-color:orange;
+		height:200px;
+		width:20%;
+
+}
+#child3{
+		background-color:orange;
+					
+}
+#child4{
+		background-color:orange;
+					
+}
+
+	
+
+

@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Assignment 1</title>
+</head>
+    
+<body>
+    <div style="width:400px; height: 500px;">
+        <input style="float:left" type="text" id="input1" />
+        <input style="float:right" type="text" id="input2" /><br/><br/>
+        <button id="button1" style="float:left"> >> </button>
+        <button id="button2" style="float: right"> << </button>
+    </div>
+    
+    <script>
+        document.getElementById("button1").onclick = function(){
+            
+            //get the value in the first input
+            var a = document.getElementById("input1").value;
+            
+            //put the value in the second input
+            document.getElementById("input2").value = a;
+            
+            //clear the first input
+            document.getElementById("input1").value = "";
+            
+        }
+        
+        
+        document.getElementById("button2").onclick = function(){
+            
+            //get the value in the first input
+            var a = document.getElementById("input2").value;
+            
+            //put the value in the second input
+            document.getElementById("input1").value = a;
+            
+            //clear the first input
+            document.getElementById("input2").value = "";
+            
+        }
+        
+        
+    </script>
+</body>
+
+</html>

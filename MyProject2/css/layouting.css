@@ -1,0 +1,39 @@
+#parent{
+	background-color:white;
+	min-height:500px;
+	width:30%;
+	float:center;
+	border:1px solid black;
+}
+#child1{
+	background-color:white;
+	min-height:70px;
+	width:100%;
+	border-bottom:1px solid black;
+}
+#orange{
+	background-color:orange;
+	height:280px;
+	width:92%;
+	margin:15px auto;
+		
+}
+#purple{
+	background-color:purple;
+	height:100px;
+	float:left;
+	width:100px;
+	
+}
+#lightblue{
+	background-color:lightblue;
+	height:100px;
+	float:left;
+	width:100px;
+	
+}
+
+	
+	
+
+

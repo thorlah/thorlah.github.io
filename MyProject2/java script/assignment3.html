@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Area of a rectangle</title>
+</head>
+    
+    <body>
+        <div id="screen" style="height: 300px; width: 300px; background-color: red; color: white">
+        
+        </div>
+        <input type="number" id="num1" />
+        <input type="number" id="num2" />
+        <button id="areaofRectangle">multiply</button>
+        
+        <script>
+            
+            document.getElementById("areaofRectangle").onclick = function(){
+                
+                //get the first number
+                var num1 = document.getElementById("num1").value;
+                //convert to int
+                var x = parseInt(num1);
+                
+                //get the second number
+                var num2 = document.getElementById("num2").value;
+                //conver to int
+                var y = parseInt(num2);
+                
+                var answer = areaofRectangle(x, y);
+                
+        //        alert("The answer is " + answer);
+                
+                document.getElementById("screen").innerText = "The answer is" + answer;
+                
+                
+            }
+            
+
+   </script>
+    
+   
+</body>
+
+    
+    
+</html>
+
+

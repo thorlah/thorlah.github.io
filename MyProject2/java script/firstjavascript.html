@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<title>First Javascript</title>
+		
+	</head>
+	<body>
+	<p>i am learning javascript</p>
+	<div id="screen" style="height:400px; width:400px; background-color:red;">
+	</div>
+	<button id="button" type="button">change color</button>
+	<button id="showbutton" type="button">show name</button>
+	<button id="show" type="button">show </button>
+	<button id="hidden" type="button">hidden</button>
+	
+		<script>
+		/*
+			alert("hi everyone")
+			alert("My name is Tolani")
+		*/
+		
+		//document.write("My name is Tolani <br>");
+		//document.write("I am 18 years old");,
+		
+		document.getElementById("button").onclick= function(){
+		//alert("Hi");
+		document.getElementById("screen").style.backgroundColor="green";
+		}
+		
+		
+		document.getElementById("screen").onclick= function(){
+		alert("please click on the button instead");
+		}
+		
+		document.getElementById("showbutton").onclick= function(){
+			document.getElementById("screen").innerText= "Tolani";
+		}
+		
+		document.getElementById("hidden").onclick= function(){
+	     document.getElementById("screen").style.display ="none";
+
+		}
+		
+		document.getElementById("show").onclick= function(){
+	     document.getElementById("screen").style.display="block";
+		}
+		
+		</script>
+		
+	</body>
+</html>

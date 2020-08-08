@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Second Javascript</title>
+		
+	</head>
+	<body>
+		<!-- <div>
+			<div id="screen" style="background-color: aqua; color:white; width:150px;height:100px;line-height: 100px; text-align:center";> </div>
+		     <P> English	<input type="number" id="englishscore"/> </P>
+			  <p> Math <input type="number" id="mathscore"/> </p>
+			  <p> Chemistry<input type="number" id="chemistryscore"/> </p>
+			  <p> Geography<input type="number" id="geographyscore"/> </p>
+			  <button id="result">login</bu>
+		</div> -->
+		
+				<script>
+					 
+					//get the first number
+					var englishscore= parseInt(prompt("Enter englishscore"));
+                    //get the second number
+                    var mathscore= parseInt(prompt("Enter mathscore"));
+					//get the third number
+                    var chemistryscore= parseInt(prompt("Enter chemistryscore"));
+					//get the fourth  number
+					
+					var geographyscore=parseInt(prompt("Enter geography"));
+					 total= englishscore+mathscore+ chemistryscore+geographyscore;
+					 average=Math.floor(total/4);
+					 if(average >=70){
+					 grade = 'A';
+					 remark = 'Excellent';
+					 }
+					 else if(average>= 60){
+						grade = 'B';
+					 remark = 'Good';
+					 }
+					 else if(average>= 50){
+					 grade = 'C';
+					 remark = 'Credit';
+					 }
+					 else if(average>= 40){
+					 grade = 'D';
+	 				remark = 'Fair';
+				 }
+				else if(average>= 30){
+				grade = 'E';
+				 remark = 'Fair';
+				 }
+				 else {
+					grade = 'F';
+					remark = 'Failed';
+					 }
+					 if(engScore>=60 && mathScore >= 55&& (chemScore >=70|| geoScore>=65 )){
+					 addmission = 'ADDMITABLE';
+					}
+					else{
+					 addmission = 'NOT ADDMITTABLE';
+					var result;
+					}
+					if (a >=60 && b >= 55 && c >=40 && d >=65 ){ 
+					alert("Admitted");
+					 }
+					 if(total >= 300 && engScore>=70 && addmission === 'ADDMITABLE'){
+					 university=university+'Qualified for the University of Ibadan';
+	 				if(total >= 275 && engScore>=65 && addmission === 'ADDMITABLE'){
+					university=university+'\nQualified for the Obafemi Awolowo University';
+					if(total >= 250 && engScore>=60 && addmission === 'ADDMITABLE'){
+					 university=university+'\nQualified for the University of Benin';
+					 }
+					 }
+					}
+					else if(total >= 275 && engScore>=65 && addmission === 'ADDMITABLE'){
+					university=university+'\nQualified for the Obafemi Awolowo University';
+					 if(total >= 250 && engScore>=60 && addmission === 'ADDMITABLE'){
+					 university=university+'\nQualified for the University of Benin';
+				 }
+				}
+				else if(total >= 250 && engScore>=60 && addmission === 'ADDMITABLE'){
+				 university=university+'\nQualified for the University of Benin';
+				 }
+				 else{
+	 		university='Sorry! You Are Not Qualified for any University';
+			 }
+			 alert( 'English Score'+ engScore +  '\nMathematics Score:'+ mathScore + '\nChemistry Score:'+ chemScore + '\nGeography Score:'+ geoScore +  '\nTotal Score:' + total + '\nAverage Score:'+ average +  '\nGrade Score:' +grade +  '\nRemar Score:' + remark + '\nAddmission Status Score:' + addmission + '\nUniversity Qualified for:'+ university);
+
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+
+    <head>
+        <title>Data type and Variable</title>
+    </head>
+        
+    <body>
+    <div>
+        <div id="screen" style="background-color: aqua; color:white; width:150px;
+        height:100px; line-height: 100px; text-align: center"></div>
+        <input type="number" id="num1"/> <br>
+        <input type="number" id="num2"/> <br>
+        <button id="addbutton" type="button"> Add</button>
+    </div>    
+        
+            <script> 
+
+                document.getElementById("addbutton").onclick = function(){
+                    //get the first number
+                    var a=parseInt(document.getElementById("num1").value);
+                    //get the second number
+                    var b=parseInt(document.getElementById("num2").value);
+                    //add the two number
+                    var c= a+b;
+                    //display the result on the screen
+                    document.getElementById("screen").innerText=c;
+                }
+                /*let a = 12;
+                let b = 15;
+                var c = "Olayemi"
+                d = "Raji"
+                document.write(a);
+                document.write('<br>');
+                document.write(b);
+                document.write(a + b + "<br>");
+                document.write(a * b + "<br>");
+                document.write(c +' '+ d);*/
+            </script>
+    </body>
+
+</html>
